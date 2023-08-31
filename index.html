@@ -85,7 +85,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
@@ -94,7 +94,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body style="height: 5000px">
+  <body>
     <header class="header">
       <div class="header-container container">
         <a href="#">
@@ -106,13 +106,17 @@
               <a href="#" class="header-menu-link" title="Home">Home</a>
             </li>
             <li class="header-menu-item">
-              <a href="#" class="header-menu-link" title="Products">Products</a>
+              <a href="#products" class="header-menu-link" title="Products"
+                >Products</a
+              >
             </li>
             <li class="header-menu-item">
-              <a href="#" class="header-menu-link" title="Features">Features</a>
+              <a href="#features" class="header-menu-link" title="Features"
+                >Features</a
+              >
             </li>
             <li class="header-menu-item">
-              <a href="#" class="header-menu-link" title="Blog">Blog</a>
+              <a href="#blog" class="header-menu-link" title="Blog">Blog</a>
             </li>
           </ul>
         </nav>
@@ -186,23 +190,28 @@
             <div class="col-lg-6">
               <figure class="feature-media-1">
                 <img
+                  class="feature-bg-1"
+                  src="./assets/img/feature-bg-1.svg"
+                  alt=""
+                />
+                <img
                   srcset="./assets/img/feature-img-1.png 2x"
                   alt="How It Works"
                   class="feature-img"
                 />
                 <div class="feature-decor-1">
-                  <img src="./assets/img/feature-decor-1.svg" alt="" />
+                  <img srcset="./assets/img/feature-decor-1.png 2x" alt="" />
                 </div>
                 <div class="feature-decor-2">
                   <img src="./assets/img/feature-decor-2.svg" alt="" />
                   <div>
-                    <strong>Congratulations</strong>
-                    <span>Your account activated</span>
+                    <strong class="heading">Congratulations</strong>
+                    <span class="desc">Your account activated</span>
                   </div>
                 </div>
               </figure>
             </div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-5 offset-lg-1 feature-content-1">
               <span class="desc feature-sub-heading">Digital Smart Wallet</span>
               <h2 class="heading feature-heading">How It Works</h2>
               <div class="feature-list">
@@ -237,8 +246,8 @@
               </div>
             </div>
           </div>
-          <div class="row row-cols-lg-2">
-            <div class="col-lg-6">
+          <div id="products" class="row row-cols-lg-2">
+            <div class="col-lg-5">
               <span class="desc feature-sub-heading">Digital Smart Wallet</span>
               <h2 class="heading feature-heading">
                 One Card For All Your Payments
@@ -264,13 +273,13 @@
                 />
                 <div class="feature-decor-3">
                   <img src="./assets/img/feature-decor-3.svg" alt="" />
-                  <div>
-                    <strong>Send Money</strong>
-                    <span>Airbnb Payment</span>
+                  <div class="decor-first">
+                    <strong class="heading">Send Money</strong>
+                    <span class="desc">Airbnb Payment</span>
                   </div>
                   <div>
-                    <strong>- $600</strong>
-                    <span>Sep 23</span>
+                    <strong class="heading">- $600</strong>
+                    <span class="desc">Sep 23</span>
                   </div>
                 </div>
                 <div class="feature-decor-4">
@@ -281,9 +290,14 @@
               </figure>
             </div>
           </div>
-          <div class="row row-cols-lg-2">
+          <div id="features" class="row row-cols-lg-2">
             <div class="col-lg-6">
               <figure class="feature-media-3">
+                <img
+                  class="feature-bg-2"
+                  src="./assets/img/feature-bg-2.svg"
+                  alt=""
+                />
                 <img
                   srcset="./assets/img/feature-img-3.png 2x"
                   alt="Transfer and Deposite Your Money Anytime"
@@ -317,7 +331,7 @@
                 </div>
               </figure>
             </div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-5 offset-lg-1 feature-content-2">
               <span class="desc feature-sub-heading">Digital Smart Wallet</span>
               <h2 class="heading feature-heading">
                 Transfer and Deposite Your Money Anytime
@@ -341,6 +355,276 @@
           </div>
         </div>
       </section>
+      <section class="clients">
+        <div class="container client-container">
+          <span class="desc client-sub-heading">Our Testimonial</span>
+          <h2 class="heading client-heading">What Clients Says</h2>
+          <p class="desc client-desc">
+            Read what clients says about us and about our online banking
+            services that may inspire you
+          </p>
+          <div class="row row-cols-lg-2">
+            <div class="col-lg-6">
+              <article class="client-review client-1">
+                <p class="desc">
+                  Fantastic platform for online banking. The best online banking
+                  platform I have used. Payments, loans, and money transfers
+                  have never been so much easier before. I am very much happy
+                  about this great online bank.
+                </p>
+                <figure class="user-icon">
+                  <img
+                    srcset="./assets/img/user-1.png 2x"
+                    alt="Alastair Cook"
+                  />
+                </figure>
+                <h3 class="heading user-name">Alastair Cook</h3>
+                <span class="desc user-desc">Businessmen</span>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="client-review client-2">
+                <p class="desc">
+                  Fantastic platform for online banking. The best online banking
+                  platform I have used. Payments, loans, and money transfers
+                  have never been so much easier before. I am very much happy
+                  about this great online bank.
+                </p>
+                <figure class="user-icon">
+                  <img
+                    srcset="./assets/img/user-2.png 2x"
+                    alt="Alastair Cook"
+                  />
+                </figure>
+                <h3 class="heading user-name">Alastair Foaks</h3>
+                <span class="desc user-desc">Businessmen</span>
+              </article>
+            </div>
+          </div>
+          <div class="client-dots">
+            <div class="client-dot active"></div>
+            <div class="client-dot"></div>
+            <div class="client-dot"></div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="blog">
+        <div class="container blog-container">
+          <div class="blog-top">
+            <div class="blog-content">
+              <span class="desc blog-sub-heading">Our Blog</span>
+              <h2 class="heading blog-heading">Get The Updates</h2>
+              <p class="desc blog-desc">
+                Read our blog for the regular updates about us and about our
+                online banking services that may inspire you
+              </p>
+            </div>
+            <button class="btn btn-1 blog-btn">Read All</button>
+          </div>
+          <div class="row row-cols-lg-2 blog-list gy-lg-3">
+            <div class="col-lg-6">
+              <article class="blog-item">
+                <figure>
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="Why do you need to open a bank account in onlineorro provident officiis tempora non asperiores excepturi, facere odio explicabo quam est eligendi illu"
+                    class="blog-img"
+                  />
+                </figure>
+                <section class="blog-item-content">
+                  <span class="desc blog-date">July 03, 2022</span>
+                  <h3 class="heading blog-item-heading line-clamp">
+                    Why do you need to open a bank account in onlineorro
+                    provident officiis tempora non asperiores excepturi, facere
+                    odio explicabo quam est eligendi illu
+                  </h3>
+                  <span class="desc blog-cta">Read Blog</span>
+                </section>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="blog-item">
+                <figure>
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="The benefits that we get from credit card at anytimeorro provident officiis tempora non asperiores excepturi, facere odio explicabo quam est eligendi illu"
+                    class="blog-img"
+                  />
+                </figure>
+                <section class="blog-item-content">
+                  <span class="desc blog-date">July 03, 2022</span>
+                  <h3 class="heading blog-item-heading line-clamp">
+                    The benefits that we get from credit card at anytimeorro
+                    provident officiis tempora non asperiores excepturi, facere
+                    odio explicabo quam est eligendi illu
+                  </h3>
+                  <span class="desc blog-cta">Read Blog</span>
+                </section>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="blog-item">
+                <figure>
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="Online bank is the best and secure way to save in the future Lorem orro provident officiis tempora non asperiores excepturi, facere odio explicabo quam est eligendi illu"
+                    class="blog-img"
+                  />
+                </figure>
+                <section class="blog-item-content">
+                  <span class="desc blog-date">July 03, 2022</span>
+                  <h3 class="heading blog-item-heading line-clamp">
+                    Online bank is the best and secure way to save in the future
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Exercitationem, iste. Cum quia quisquam tenetur, quod sint,
+                    porro provident officiis tempora non asperiores excepturi,
+                    facere odio explicabo quam est eligendi illum.
+                  </h3>
+                  <span class="desc blog-cta">Read Blog</span>
+                </section>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="blog-item">
+                <figure>
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to manage your money in online in this busy daysorro provident officiis tempora non asperiores excepturi, facere odio explicabo quam est eligendi illu"
+                    class="blog-img"
+                  />
+                </figure>
+                <section class="blog-item-content">
+                  <span class="desc blog-date">July 03, 2022</span>
+                  <h3 class="heading blog-item-heading line-clamp">
+                    How to manage your money in online in this busy days orro
+                    provident officiis tempora non asperiores excepturi, facere
+                    odio explicabo quam est eligendi illu
+                  </h3>
+                  <a href="#!" class="desc blog-cta">Read Blog</a>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container contact-container">
+          <section class="contact-content">
+            <span class="desc contact-sub-heading">Our App</span>
+            <h2 class="heading contact-heading">Download the Apps</h2>
+            <p class="desc contact-desc">
+              Download our mobile apps and get started today with a special
+              online bank and move faster
+            </p>
+            <div class="contact-cta">
+              <a href="#!">
+                <img
+                  srcset="./assets/img/ggplay.png 2x"
+                  alt="Get it on GGPlay"
+                />
+              </a>
+              <a href="#!">
+                <img
+                  srcset="./assets/img/appstore.png 2x"
+                  alt="Get it on AppStore"
+                />
+              </a>
+            </div>
+          </section>
+          <img
+            class="contact-decor contact-decor-1"
+            src="./assets/img/contact-decor.svg"
+            alt=""
+          />
+          <img
+            class="contact-decor-2 contact-decor"
+            src="./assets/img/contact-decor.svg"
+            alt=""
+          />
+          <img
+            class="contact-decor-3 contact-decor"
+            src="./assets/img/contact-decor.svg"
+            alt=""
+          />
+          <img
+            class="contact-decor-4 contact-decor"
+            src="./assets/img/contact-decor.svg"
+            alt=""
+          />
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <figure class="footer-column">
+          <img src="./assets/img/logo.svg" alt="CeloBank" />
+        </figure>
+        <div class="footer-column">
+          <h3 class="footer-heading heading">Sitemap</h3>
+          <ul class="footer-links desc">
+            <li>
+              <a href="#!" class="footer-link desc">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">About</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Growers</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Merchants</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading heading">Socials</h3>
+          <ul class="footer-links desc">
+            <li>
+              <a href="#!" class="footer-link desc">Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Linkedin</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Instagram</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link desc">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading heading">Head Office</h3>
+          <a href="#!" class="footer-link desc"
+            >Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+            Charlottesville, CA 45565</a
+          >
+          <label for="footer-input" class="heading footer-label"
+            >News letter</label
+          >
+          <form action="#!" class="footer-form">
+            <input
+              type="text"
+              class="footer-input"
+              id="footer-input"
+              placeholder="Email address..."
+            />
+            <button class="btn btn-2 footer-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-contact">
+        <a class="desc" href="mailto:email@gmail.com">email@gmail.com</a>
+        <a class="desc" href="tel:(123) 456-7890">(123) 456-7890</a>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p class="desc">© 2020 Ligft Media All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
