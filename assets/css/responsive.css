@@ -1,0 +1,234 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  /* Header */
+  .header-menu {
+    display: none;
+  }
+  .mobile-header {
+    display: none;
+  }
+}
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+  /* Header */
+  .header .header-nav {
+    display: none;
+  }
+  .header-menu ion-icon {
+    padding-left: 30px;
+    font-size: 3rem;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+  }
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background-color: #fff;
+    z-index: 4;
+    transform: translateX(-100%);
+    transition: all 0.2s linear;
+    padding: 40px;
+  }
+  .menu-drawer img {
+    width: 30%;
+  }
+  .menu-drawer .header-nav {
+    margin-left: 0;
+  }
+  .menu-drawer .header-menu-link {
+    font-size: 2.4rem;
+  }
+  .menu-drawer .header-menu {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px 0;
+    align-items: flex-start;
+  }
+  .menu-checkbox:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  /* Hero */
+  .hero-content {
+    max-width: 100%;
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+  /* Client */
+  .client-2 {
+    display: none;
+  }
+  /* Contact */
+  .contact {
+    border-radius: 0;
+  }
+  .contact-decor {
+    display: none;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Header */
+  .menu-drawer .header-auth {
+    display: none;
+  }
+  /* Hero */
+  .hero-heading {
+    font-size: 5rem;
+  }
+  /* Blog */
+  .blog-item-content {
+    max-width: 419px;
+  }
+  /* Contact */
+  .contact-container {
+    padding: 20px 145px;
+  }
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .btn {
+    width: 100%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  /* Header */
+  .header .header-auth {
+    display: none;
+  }
+  .header-menu {
+    margin-left: auto;
+  }
+  .menu-drawer {
+    inset: 0 20% 0 0;
+  }
+  .menu-drawer img {
+    width: 50%;
+  }
+  .menu-drawer .header-menu {
+    margin-top: 20px;
+  }
+  .menu-drawer .header-menu-link {
+    font-size: 1.6rem;
+  }
+  .menu-drawer .header-auth {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid var(--dark-color);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0;
+  }
+  /* Hero */
+  .hero {
+    margin-top: 30px;
+  }
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .hero-form {
+    margin-top: 20px;
+  }
+  .hero-input {
+    padding: 20px 58px 20px 23px;
+  }
+  .hero-btn {
+    bottom: -140%;
+    top: initial;
+    right: initial;
+  }
+  /* Features */
+  .feature-media-1,
+  .feature-media-3 {
+    display: none;
+  }
+  .feature-container .row {
+    margin-top: 30px;
+  }
+  .feature-list {
+    margin-top: 30px;
+  }
+  .feature-item-heading {
+    font-size: 2rem;
+  }
+  .feature-card-item {
+    font-size: 1.6rem;
+  }
+  /* Client */
+  .clients {
+    margin-top: 50px;
+  }
+  .client-review {
+    margin-top: 30px;
+  }
+  .client-review p {
+    font-size: 1.8rem;
+  }
+  .client-review p::after {
+    left: 41.3%;
+  }
+  /* Blog */
+  .blog,
+  .blog-list {
+    margin-top: 50px;
+  }
+  .blog-top {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .blog-item {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .blog-img {
+    width: 285px;
+  }
+  .blog-item-heading {
+    font-size: 1.6rem;
+  }
+  /* Contact */
+  .contact {
+    margin-top: 70px;
+  }
+  .contact-container {
+    padding: 16px 30px;
+  }
+  /* Footer */
+  .footer {
+    margin-top: 30px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+  .footer-form {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .footer-input {
+    width: 100%;
+  }
+  .footer-contact {
+    gap: 0 70px;
+  }
+}

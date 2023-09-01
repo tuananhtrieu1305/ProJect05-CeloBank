@@ -95,11 +95,53 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="header-container container">
         <a href="#">
           <img src="./assets/img/logo.svg" alt="CeloBank" class="header-logo" />
         </a>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link" title="Home">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#products" class="header-menu-link" title="Products"
+                >Products</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#features" class="header-menu-link" title="Features"
+                >Features</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#blog" class="header-menu-link" title="Blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-auth">
+          <a href="#!" class="log-in-btn">Log in</a>
+          <button class="btn btn-1 sign-up-btn">Sign up</button>
+        </div>
+        <label for="menu-checkbox" class="header-menu">
+          <ion-icon name="menu-outline"></ion-icon>
+        </label>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="overlay"></label>
+      <div class="menu-drawer">
+        <img src="./assets/img/logo.svg" alt="CeloBank" />
         <nav class="header-nav">
           <ul class="header-menu">
             <li class="header-menu-item">
@@ -130,7 +172,7 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="row row-cols-lg-2">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <section class="hero-content">
                 <span class="desc hero-sub-heading">Digital Smart Wallet</span>
                 <h1 class="heading hero-heading">
@@ -154,9 +196,9 @@
                 >
               </section>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <figure class="hero-media">
-                <figure class="offset-lg-2">
+                <figure class="offset-lg-2 offset-md-3 offset-1">
                   <img
                     srcset="./assets/img/hero-img-1.png 2x"
                     alt=""
@@ -187,7 +229,7 @@
       <section class="features">
         <div class="container feature-container">
           <div class="row row-cols-lg-2">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <figure class="feature-media-1">
                 <img
                   class="feature-bg-1"
@@ -211,7 +253,9 @@
                 </div>
               </figure>
             </div>
-            <div class="col-lg-5 offset-lg-1 feature-content-1">
+            <div
+              class="col-lg-5 offset-lg-1 feature-content-1 col-md-12 col-12"
+            >
               <span class="desc feature-sub-heading">Digital Smart Wallet</span>
               <h2 class="heading feature-heading">How It Works</h2>
               <div class="feature-list">
@@ -247,7 +291,7 @@
             </div>
           </div>
           <div id="products" class="row row-cols-lg-2">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-12 col-12">
               <span class="desc feature-sub-heading">Digital Smart Wallet</span>
               <h2 class="heading feature-heading">
                 One Card For All Your Payments
@@ -264,7 +308,7 @@
               </ul>
               <button class="btn btn-1 feature-btn">Get Started</button>
             </div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-6 offset-lg-1 col-md-12 col-12">
               <figure class="feature-media-2">
                 <img
                   srcset="./assets/img/feature-img-2.png 2x"
@@ -363,7 +407,7 @@
             Read what clients says about us and about our online banking
             services that may inspire you
           </p>
-          <div class="row row-cols-lg-2">
+          <div class="row row-cols-lg-2 gy-md-1 gy-1">
             <div class="col-lg-6">
               <article class="client-review client-1">
                 <p class="desc">
@@ -421,8 +465,8 @@
             </div>
             <button class="btn btn-1 blog-btn">Read All</button>
           </div>
-          <div class="row row-cols-lg-2 blog-list gy-lg-3">
-            <div class="col-lg-6">
+          <div class="row row-cols-lg-2 blog-list gy-lg-3 gy-md-2 gy-1">
+            <div class="col-lg-6 col-md-12 col-12">
               <article class="blog-item">
                 <figure>
                   <img
@@ -442,7 +486,7 @@
                 </section>
               </article>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <article class="blog-item">
                 <figure>
                   <img
@@ -462,7 +506,7 @@
                 </section>
               </article>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <article class="blog-item">
                 <figure>
                   <img
@@ -484,7 +528,7 @@
                 </section>
               </article>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <article class="blog-item">
                 <figure>
                   <img
@@ -626,5 +670,14 @@
         </div>
       </div>
     </footer>
+    <!-- Script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
